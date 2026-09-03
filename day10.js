@@ -143,32 +143,63 @@
 // console.log(typeof undefined);
 // console.log([] == []);
 
-const p1 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("p1 success");
-  }, 2000);
-});
+// const p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("p1 success");
+//   }, 2000);
+// });
 
-const p2 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    reject("p2 error");
-    // resolve("p2 success");
-  }, 1000);
-});
+// const p2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject("p2 error");
+//     // resolve("p2 success");
+//   }, 1000);
+// });
 
-const p3 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    // resolve("p3 success");
-    reject("p3 reject");
-  }, 3000);
-});
+// const p3 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     // resolve("p3 success");
+//     reject("p3 reject");
+//   }, 3000);
+// });
 
-Promise.allSettled([p1, p2, p3])
-  .then((resolve) => {
-    console.log(resolve);
-  })
+// Promise.allSettled([p1, p2, p3])
+//   .then((resolve) => {
+//     console.log(resolve);
+//   })
 
-  .catch((error) => {
-    console.error(error);
-    console.log(error.error);
-  });
+//   .catch((error) => {
+//     console.error(error);
+//     console.log(error.error);
+//   });
+
+const p1 = new Promise((reslove, reject) => {
+    setTimeout(() => {
+        reject("p1 is reject")
+        // reslove("p1 is success")
+    }, 1000);
+})
+
+const p2 = new Promise((reslove, reject) => {
+    setTimeout(() => {
+        // reslove("p2 is success")
+        reject("p2 is reject")
+    }, 3000);
+})
+
+const p3 = new Promise((reslove, reject) => {
+    setTimeout(() => {
+        // reslove("p3 is success")
+        reject("p3 is reject")
+    }, 5000);
+})
+
+Promise.any([p1, p2, p3])
+.then((reslove) => {
+    console.log(reslove);
+})
+
+.catch((err) => {
+    console.log(err);
+    console.error(err)
+})
