@@ -173,33 +173,33 @@
 //     console.log(error.error);
 //   });
 
-const p1 = new Promise((reslove, reject) => {
-    setTimeout(() => {
-        reject("p1 is reject")
-        // reslove("p1 is success")
-    }, 1000);
-})
+// const p1 = new Promise((reslove, reject) => {
+//     setTimeout(() => {
+//         reject("p1 is reject")
+//         // reslove("p1 is success")
+//     }, 1000);
+// })
 
-const p2 = new Promise((reslove, reject) => {
-    setTimeout(() => {
-        // reslove("p2 is success")
-        reject("p2 is reject")
-    }, 3000);
-})
+// const p2 = new Promise((reslove, reject) => {
+//     setTimeout(() => {
+//         // reslove("p2 is success")
+//         reject("p2 is reject")
+//     }, 3000);
+// })
 
-const p3 = new Promise((reslove, reject) => {
-    setTimeout(() => {
-        // reslove("p3 is success")
-        reject("p3 is reject")
-    }, 5000);
-})
+// const p3 = new Promise((reslove, reject) => {
+//     setTimeout(() => {
+//         // reslove("p3 is success")
+//         reject("p3 is reject")
+//     }, 5000);
+// })
 
-Promise.any([p1, p2, p3])
-.then((reslove) => {
-    console.log(reslove);
-})
+// Promise.any([p1, p2, p3])
+// .then((reslove) => {
+//     console.log(reslove);
+// })
 
-.catch((err) => {
-    console.log(err);
-    console.error(err)
-})
+// .catch((err) => {
+//     console.log(err);
+//     console.error(err)
+// })
