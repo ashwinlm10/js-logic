@@ -32,7 +32,7 @@
 // console.log(res);
 
 //!
-const numbers = [3, 8, 12, 17, 20, 25, 30, 33, 40];
-let res = numbers.find( num => num > 25 && num % 2 === 0)
-console.log(res);
+// const numbers = [3, 8, 12, 17, 20, 25, 30, 33, 40];
+// let res = numbers.find( num => num > 25 && num % 2 === 0)
+// console.log(res);
 
