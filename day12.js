@@ -162,15 +162,78 @@
 
 //! remove duplicate from an array
 
-function removedup(arr) {
-  let result = [];
+// function removedup(arr) {
+//   let result = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    let current = arr[i];
-    if (!result.includes(arr[i])) {
-      result.push(current);
-    }
-  }
-  return result;
-}
-console.log(removedup([1, 2, 3, 4, 4, 5, 6, 6, 7]));
+//   for (let i = 0; i < arr.length; i++) {
+//     let current = arr[i];
+//     if (!result.includes(arr[i])) {
+//       result.push(current);
+//     }
+//   }
+//   return result;
+// }
+// console.log(removedup([1, 2, 3, 4, 4, 5, 6, 6, 7]));
+
+//! remove duplicates from arr
+
+// function duplicate(arr) {
+//   let res = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let current = arr[i];
+//     if (!res.includes(current)) {
+//       res.push(current);
+//     }
+//   }
+//   return res;
+// }
+// console.log(duplicate([1, 2, 2, 3, 4, 5, 5, 6]));
+
+//! factorial of number
+
+// function factorial(n) {
+//   let factorial = 1;
+
+//   for (let i = n; i >= 1; i--) {
+//     factorial *= i;
+//   }
+//   return factorial;
+// }
+// console.log(factorial(3));
+
+//! fizzbuzz
+
+// function fizzBuzz(num){
+//   if(num % 3 === 0 && num % 5 === 0){
+//     console.log("it is a fizz-buzz number");
+//   }else if(num % 3 === 0){
+//     console.log("it is a fizz number");
+//   }else if(num % 5 === 0){
+//     console.log("it is a buzz number")
+//   }
+//   else{
+//     console.log("it is just a number");
+//   }
+//   return num
+// }
+// fizzBuzz(55)
+
+//! second largest number
+
+// function secondLatgest(arr){
+//   let largest = arr[0]
+//   let secondLargest = arr[1]
+
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] > largest){
+//       secondLargest = largest
+//       largest = arr[i]
+//     }
+//     else if(arr[i] > secondLargest){
+//       secondLargest = arr[i]
+//     }
+//   }
+//   return secondLargest
+// }
+// console.log(secondLatgest([10, 25, 8, 40, 30]));
