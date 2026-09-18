@@ -110,7 +110,7 @@
 
 //! quesition 11
 
-const str = "  Learn-JavaScript-React  ";
-let result = str.trim().replaceAll("-", " ")
-let word = result.charAt(0).toLowerCase() + result.substring(1)
-console.log(word);
+// const str = "  Learn-JavaScript-React  ";
+// let result = str.trim().replaceAll("-", " ")
+// let word = result.charAt(0).toLowerCase() + result.substring(1)
+// console.log(word);
